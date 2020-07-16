@@ -1,0 +1,108 @@
+$colorPrimary: #03a9f4;
+$red: #f55531;
+$green: #21b051;
+$blue: #3b63b3;
+
+//mixin para margenes
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+//mixin para margenes
+@mixin margenesHor($left, $right){
+    margin-left: $left;
+    margin-right: $right;
+}
+//mixin para margenes
+@mixin margBodyCard($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+//mixin para padding de iconos
+@mixin padding-icons($right, $left){
+    padding-right: $right;
+    padding-left: $left;
+}
+
+footer {
+	background-color: $colorPrimary; //aplicando variable color verde
+	padding: 10px 10px 0 10px;	
+	@include margenes(10px, 0px);
+}
+
+.jumbotron {
+	background-color: $colorPrimary; //aplicando variable color amarillo
+	color: black; 
+	@include margenes(50px, 10px); //aca aplicamos el mixin credo de margenes
+}
+
+.card-hotel {
+	flex: 1 200px;
+	@include margenes(10px, 0px);
+	//border-radius: 2px;
+}
+.btn_reserva {
+    //background-color: $red; //aplicando variable color rojo
+	width: 100%;
+	border-radius: 0px;
+}
+
+.footer-address-icon {
+	@include padding-icons(10px, 0px)
+}
+
+.centerBlock {
+	display: table;
+	margin: auto;
+}
+
+.tab-content {
+	padding-top: 10px;
+}
+
+.btnCollapse {
+	margin-top: 4px; }
+
+.marginHorizontal {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.marginHorizontalCarrousel {
+	@include margenesHor(8px,0px);
+}
+
+.margenesBodyCard {
+	@include margBodyCard(0px,0px)
+}
+
+.marginHorizontalCard {
+	@include margenesHor(-12px,-12px);
+}
+
+.sizeTextSmall {
+	font-size: 11px;
+ }
+
+ .btn-fix {
+	padding: 0;
+	border: none;
+	white-space: normal;
+}
+
+.titleNews {
+	padding: -10;
+	margin: -10px;
+	color: rgb(126, 125, 125);
+}
+
+.my-card {
+	height: 350px;
+	width: 350px;
+}
+
+.my-card-content {
+	padding: 16px;
+}
+
+

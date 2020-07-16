@@ -1,0 +1,92 @@
+footer {
+  background-color: #03a9f4;
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.jumbotron {
+  background-color: #03a9f4;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 10px; }
+
+.card-hotel {
+  flex: 1 200px;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.btn_reserva {
+  width: 100%;
+  border-radius: 0px; }
+
+.footer-address-icon {
+  padding-right: 10px;
+  padding-left: 0px; }
+
+.centerBlock {
+  display: table;
+  margin: auto; }
+
+.tab-content {
+  padding-top: 10px; }
+
+.btnCollapse {
+  margin-top: 4px; }
+
+.marginHorizontal {
+  margin-left: 8px;
+  margin-right: 8px; }
+
+.marginHorizontalCarrousel {
+  margin-left: 8px;
+  margin-right: 0px; }
+
+.margenesBodyCard {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.marginHorizontalCard {
+  margin-left: -12px;
+  margin-right: -12px; }
+
+.sizeTextSmall {
+  font-size: 11px; }
+
+.sizeTitleApp {
+    font-size: 20px; }
+
+.btn-fix {
+  padding: 0;
+  border: none;
+  white-space: normal; }
+
+.titleNews {
+  padding: -10;
+  margin: -10px;
+  color: #7e7d7d; }
+
+.my-card {
+  height: 350px;
+  width: 350px; }
+
+.my-card-content {
+  padding: 16px; }
+
+.cardFinder {
+    margin-top: 10px;
+    margin-bottom: 0px; 
+}
+
+.marginContainer {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.marginDiv {
+  margin-top: 0px;
+  margin-bottom: 10px; 
+}
+
+.marginTitleApp {
+  margin-right: 0px;
+  margin-left: 50px; }
