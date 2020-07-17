@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+
+    <!-- Componentes del NavBar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper light-blue accent-3">
+              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Donaciones</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="maps.html">Mapas</a></li>
+                <li><a href="adverts.html">Anuncios</a></li>
+                <li><a href="settings.html">Ajustes</a></li>
+                <li><a href="account.html">Mi cuenta</a></li>
+                <li><a href="information.html">Información</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+                <li><a href="donate.html">Donar</a></li>
+                <li><a href="share.html">Compartir</a></li>
+                <li><a href="#">Salir</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+      <!-- Componentes del SideNav -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="/images/nav_1.jpg" alt="">
+                </div>
+                <a href="#">
+                    <img src="/images/img_profile.png" alt="" class="circle">
+                </a>
+                <a href="#">
+                    <span class="name black-text"><b>Johan Martínez</b></span>
+                </a>
+                <a href="#">
+                    <span class="email black-text">jomarquin@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <a href="index.html"><i class="material-icons">home</i>Inicio</a>
+        </li>
+        <li>
+            <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
+        </li>
+        <li>
+            <a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a>
+        </li>
+        <li>
+            <a href="settings.html"><i class="material-icons">settings</i>Ajustes</a>
+        </li>
+        <li>
+            <a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a>
+        </li>
+        <li>
+            <a href="information.html"><i class="material-icons">info</i>Información</a>
+        </li>
+        <li>
+            <a href="help.html"><i class="material-icons">help</i>Ayuda</a>
+        </li>
+        <li>
+            <a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="share.html"><i class="material-icons">share</i>Compartir</a>
+        </li>
+        <li>
+            <a href="#"><i class="material-icons">power_settings_new</i>Salir</a>
+        </li>
+      </ul>
+
+
+
+
+ 
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems);
+
+                var elems = document.querySelectorAll('.slider');
+                var instances = M.Slider.init(elems, {
+                    interval: 3000,
+                    height: 230
+                });
+            });
+        </script>
+       
+
+</body>
+</html>
