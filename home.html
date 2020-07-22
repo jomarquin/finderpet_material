@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+
+    <!-- Componentes del NavBar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper light-blue accent-3">
+              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Inicio</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="maps.html">Mapas</a></li>
+                <li><a href="adverts.html">Anuncios</a></li>
+                <li><a href="settings.html">Ajustes</a></li>
+                <li><a href="account.html">Mi cuenta</a></li>
+                <li><a href="information.html">Información</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+                <li><a href="donate.html">Donar</a></li>
+                <li><a href="share.html">Compartir</a></li>
+                <li><a href="#modal_logout" class="modal-trigger">Salir</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+      <!-- Componentes del SideNav -->
+      <ul class="sidenav" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="/images/nav_1.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <img src="/images/img_profile.png" alt="" class="circle">
+                    </a>
+                    <a href="#">
+                        <span class="name black-text"><b>Johan Martínez</b></span>
+                    </a>
+                    <a href="#">
+                        <span class="email black-text">jomarquin@gmail.com</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="home.html"><i class="material-icons">home</i>Inicio</a>
+            </li>
+            <li>
+                <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
+            </li>
+            <li>
+                <a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a>
+            </li>
+            <li>
+                <a href="settings.html"><i class="material-icons">settings</i>Ajustes</a>
+            </li>
+            <li>
+                <a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a>
+            </li>
+            <li>
+                <a href="information.html"><i class="material-icons">info</i>Información</a>
+            </li>
+            <li>
+                <a href="help.html"><i class="material-icons">help</i>Ayuda</a>
+            </li>
+            <li>
+                <a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a>
+            </li>
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="share.html"><i class="material-icons">share</i>Compartir</a>
+            </li>
+            <li>
+                <a href="#modal_logout" class="modal-trigger"><i class="material-icons">power_settings_new</i>Salir</a>
+            </li>
+      </ul>
+
+    <!-- Cards de opciones -->
+    <!--
+    <div class="row">
+        <div class="col s12 m4">
+        <div class="card cardFinder">
+            <div class="card-image">
+                <img src="images/found_card.png">
+                <span class="card-title marginHorizontalCard"><b>Mascotas Encontradas</b></span>
+            </div>
+        </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card cardFinder">
+                <div class="card-image">
+                    <img src="images/lost_card.png">
+                    <span class="card-title marginHorizontalCard"><b>Mascotas Perdidas</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card cardFinder">
+                <div class="card-image">
+                    <img src="images/adopted_card.png">
+                    <span class="card-title marginHorizontalCard"><b>Mascotas en adopción</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div class="row cardFinder">
+        <div class="col s12 m4 l3 offset-l2">
+            <a href="./founds.html" class="waves-effect waves-light">
+                <img src="/images/found_card.png" class="responsive-img" alt="" style="border-radius: 1em/1em;">
+                <p class="white-text" style="position: absolute; left: 10px; top: 15px; font-size: 22px;"><b>Mascotas Encontradas</b></p>
+                <p class="white-text" style="position: absolute; left: 10px; top: 50px; font-size: 12px;">Reporta aquí mascotas que encuentres o reporten como perdidas.</p>
+            </a>
+        </div>
+        <div class="col s12 m4 l3">
+            <a href="./losts.html" class="waves-effect waves-light">
+                <img src="/images/lost_card.png" class="responsive-img" alt="" style="border-radius: 1em/1em;">
+                <p class="white-text" style="position: absolute; left: 10px; top: 15px; font-size: 22px;"><b>Mascotas Perdidas</b></p>
+                <p class="white-text" style="position: absolute; left: 10px; top: 50px; font-size: 12px;">Reporta aquí mascotas extraviadas o robadas.</p>
+            </a>
+        </div>
+        
+        <div class="col s12 m4 l3">
+            <a href="./adopted.html" class="waves-effect waves-light">
+                <img src="/images/adopted_card.png" class="responsive-img" alt="" style="border-radius: 1em/1em;">
+                <p class="white-text" style="position: absolute; left: 10px; top: 15px; font-size: 22px;"><b>Mascotas en Adopción</b></p>
+                <p class="white-text" style="position: absolute; left: 10px; top: 50px; font-size: 12px;">Encuentra aquí la mascota ideal para tí.</p>
+            </a>
+        </div>        
+    </div>
+
+
+
+
+    
+    
+
+
+    <!-- Titulo de noticia recientes -->
+    <div >
+        <p class="sizeTextSmall center margenesBodyCard" >Noticias & Eventos</p>
+    </div>
+
+    <div class="divider marginDiv" ></div>
+    
+    
+    <!-- Slider de imágenes con anuncios -->
+    <div class="row">
+        <div class="col s12 m7 offset-m3">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="/images/banner1.png">
+                    </li>
+                    <li>
+                        <img src="/images/banner2.png">
+                    </li>
+                    <li>
+                        <img src="/images/banner3.png">
+                    </li>
+                    <li>
+                        <img src="/images/banner4.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Logout -->
+    <div id="modal_logout" class="modal">
+        <div class="modal-content center">
+            <img src="/images/img_exclamacion.png" alt="" class="responsive-img">
+            <h5>¿Deseas salir de la aplicación?</h5>   
+            <p>Si tienes publicaciones en progreso se perderán</p> 
+            <div class="row">
+                <div class="col s6 m4 offset-m2">
+                    <a href="#"class="modal-close waves-effect waves-light btn grey">Cancelar</a>
+                </div>
+                <div class="col s6 m4">
+                    <a href="index.html"class="waves-effect waves-light btn red">Aceptar</a>
+                </div>
+            </div>  
+        </div>
+    </div> 
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+    <!-- FinderPet JS -->
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                interval: 3000,
+                height: 230
+            });
+            
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+                        
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+
+        });
+    </script>
+       
+
+</body>
+</html>

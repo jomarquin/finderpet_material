@@ -3,196 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Login</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Otros iconos de google -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+    <!-- Libreria para animaciones -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 
 
 </head>
-<body>
+<body class="font-cover" id="login">
 
-    <!-- Componentes del NavBar -->
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper light-blue accent-3">
-              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Inicio</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="maps.html">Mapas</a></li>
-                <li><a href="adverts.html">Anuncios</a></li>
-                <li><a href="settings.html">Ajustes</a></li>
-                <li><a href="account.html">Mi cuenta</a></li>
-                <li><a href="information.html">Información</a></li>
-                <li><a href="help.html">Ayuda</a></li>
-                <li><a href="donate.html">Donar</a></li>
-                <li><a href="share.html">Compartir</a></li>
-                <li><a href="#">Salir</a></li>
-              </ul>
+    <div class="container animate__animated animate__backInDown">
+        <div class="row">
+            <div class="col s12 m5 hide-on-small-only">
+                <img src="/images/img_logo_border_white.png" alt="" class="responsive-img">
+                <p id="welcome">Bienvenidos a nuestra comunidad, podrás ver listados de mascotas encontradas, extraviadas y en adopción. Tú puedes colaborar con nuestra comunidad reportando mascotas que veas en las calles y parezcan perdidas, también puedes hacer publicaciones si tu mascota se ha extraviado o puedes buscar tu mascota ideal en el listado de adopciones.</p>
             </div>
-        </nav>
-    </div>
-      <!-- Componentes del SideNav -->
-      <ul class="sidenav" id="mobile-demo">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="/images/nav_1.jpg" alt="">
+            <div class="col s12 m4 offset-m3 center">
+                <div class="container-login center-align">
+                    <div >
+                        <span class="material-icons">account_circle</span>
+                        <p style="margin-top: 1px 0;">Inicia sesión con tu cuenta</p>   
                     </div>
-                    <a href="#">
-                        <img src="/images/img_profile.png" alt="" class="circle">
-                    </a>
-                    <a href="#">
-                        <span class="name black-text"><b>Johan Martínez</b></span>
-                    </a>
-                    <a href="#">
-                        <span class="email black-text">jomarquin@gmail.com</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <a href="index.html"><i class="material-icons">home</i>Inicio</a>
-            </li>
-            <li>
-                <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
-            </li>
-            <li>
-                <a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a>
-            </li>
-            <li>
-                <a href="settings.html"><i class="material-icons">settings</i>Ajustes</a>
-            </li>
-            <li>
-                <a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a>
-            </li>
-            <li>
-                <a href="information.html"><i class="material-icons">info</i>Información</a>
-            </li>
-            <li>
-                <a href="help.html"><i class="material-icons">help</i>Ayuda</a>
-            </li>
-            <li>
-                <a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a>
-            </li>
-            <li><div class="divider"></div></li>
-            <li>
-                <a href="share.html"><i class="material-icons">share</i>Compartir</a>
-            </li>
-            <li>
-                <a href="#"><i class="material-icons">power_settings_new</i>Salir</a>
-            </li>
-      </ul>
-
-    <!-- Cards de opciones -->
-    <!--
-    <div class="row">
-        <div class="col s12 m4">
-        <div class="card cardFinder">
-            <div class="card-image">
-                <img src="images/found_card.png">
-                <span class="card-title marginHorizontalCard"><b>Mascotas Encontradas</b></span>
-            </div>
-        </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card cardFinder">
-                <div class="card-image">
-                    <img src="images/lost_card.png">
-                    <span class="card-title marginHorizontalCard"><b>Mascotas Perdidas</b></span>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card cardFinder">
-                <div class="card-image">
-                    <img src="images/adopted_card.png">
-                    <span class="card-title marginHorizontalCard"><b>Mascotas en adopción</b></span>
+                    <form action="">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Correo</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">https</i>
+                            <input id="Password" type="password" class="validate">
+                            <label for="Password">Contraseña</label>
+                        </div>
+                        <!-- No me funciono el ingreso al home con la etiqueta buttom, revisar luego porque -->
+                        <a href="home.html" class="waves-effect waves-light btn  light-blue accent-3">Ingresar &nbsp; <i class="material-icons left">login</i></a>
+                    </form>
+                    <a class="btn-flat waves-effect waves-light" onclick="M.toast({html: 'Recuperar contraseña'})">Olvidé mi contraseña</a>
+                    <p>o inicia con...</p> 
+                    <div>
+                        <button class="waves-effect waves-light btn red" onclick="M.toast({html: 'Ingresar con Google'})">Continuar con Google &nbsp; <i class="zmdi zmdi-google left"></i></button>
+                    </div>
+                    <div>
+                        <button class="waves-effect waves-light btn blue darken-4" onclick="M.toast({html: 'Ingresar con Facebook'})">Continuar con facebook &nbsp; <i class="zmdi zmdi-facebook left"></i></button>
+                    </div>                    
+                    
+                    <div class="divider grey" style="margin: 10px 0;"></div>
+                    <p>¿No tienes una cuenta?</p>
+                    <a href="#modal_register" class="waves-effect waves-light modal-trigger" >Crear una cuenta</a>
                 </div>
             </div>
         </div>
     </div>
-    -->
 
-    <div class="container marginContainer">
-        <div class="row cardFinder marginContainer">
-            <div class="col s12 m4">
-                <a href="./founds.html">
-                    <img src="/images/found_card.png" class="responsive-img" alt="">
-                </a>
-            </div>
-            <div class="col s12 m4">
-                <a href="./losts.html">
-                    <img src="/images/lost_card.png" class="responsive-img" alt="">
-                </a>
-            </div>
-            
-            <div class="col s12 m4">
-                <a href="./adopted.html">
-                    <img src="/images/adopted_card.png" class="responsive-img" alt="">
-                </a>
-            </div>
-            
+    
+  <!-- Modal Trigger 
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+  -->
+
+  <!-- Modal Structure -->
+    <div id="modal_register" class="modal">
+        <div class="modal-content center">
+            <h6>Crear una cuenta</h6>   
+            <div class="divider"></div>    
+            <form action="">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="emailRegister" type="email" class="validate">
+                    <label for="emailRegister">Correo</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">https</i>
+                    <input id="Password1" type="password" class="validate">
+                    <label for="Password1">Contraseña</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">https</i>
+                    <input id="Password2" type="password" class="validate">
+                    <label for="Password2">Confirme Contraseña</label>
+                </div>
+                <!-- No me funciono el ingreso al home con la etiqueta buttom, revisar luego porque -->
+                <a href="#" onclick="M.toast({html: 'Nuevo registro'})" class="waves-effect waves-light btn  light-blue accent-3">Registrar &nbsp; <i class="material-icons left">how_to_reg</i></a>
+            </form>
         </div>
-    </div>
-    
-
-
-    <!-- Titulo de noticia recientes -->
-    <div >
-        <p class="sizeTextSmall center margenesBodyCard" >Noticias recientes</p>
-    </div>
-
-    <div class="divider marginDiv" ></div>
-    
-    
-    <!-- Slider de imágenes con anuncios -->
-    <div class="row">
-        <div class="col s0 m3">
-
-        </div>
-        <div class="col s12 m6">
-            <div class="slider">
-                <ul class="slides">
-                    <li>
-                        <img src="/images/banner1.png">
-                    </li>
-                    <li>
-                        <img src="/images/banner2.png">
-                    </li>
-                    <li>
-                        <img src="/images/banner3.png">
-                    </li>
-                    <li>
-                        <img src="/images/banner4.png">
-                    </li>
-                </ul>
-            </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
         </div>
     </div>
 
 
- 
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-        </script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems);
 
-                var elems = document.querySelectorAll('.slider');
-                var instances = M.Slider.init(elems, {
-                    interval: 3000,
-                    height: 230
-                });
+   
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+    <!-- FinderPet JS -->
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                interval: 3000,
+                height: 230
             });
-        </script>
+            
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+                        
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+
+        });
+    </script>
        
 
 </body>

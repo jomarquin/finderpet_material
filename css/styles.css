@@ -4,25 +4,6 @@ footer {
   margin-top: 10px;
   margin-bottom: 0px; }
 
-.jumbotron {
-  background-color: #03a9f4;
-  color: black;
-  margin-top: 50px;
-  margin-bottom: 10px; }
-
-.card-hotel {
-  flex: 1 200px;
-  margin-top: 10px;
-  margin-bottom: 0px; }
-
-.btn_reserva {
-  width: 100%;
-  border-radius: 0px; }
-
-.footer-address-icon {
-  padding-right: 10px;
-  padding-left: 0px; }
-
 .centerBlock {
   display: table;
   margin: auto; }
@@ -58,19 +39,20 @@ footer {
   height: 350px;
   width: 350px; }
 
+
+/* Cradas para finderpet - revisar las anteriores para ver si se estan usando */
+
+.primaryColor {
+  color: #00b0ff;
+}
+
 .cardFinder {
     margin-top: 10px;
     margin-bottom: 0px; 
 }
 
-.marginContainer {
-  margin-left: 0px;
-  margin-right: -40px;
-}
-
-.marginCardView {
-  margin-left: 0px;
-  margin-right: -40px;
+.containerMain {
+  margin: 10px;
 }
 
 .marginDiv {
@@ -88,19 +70,102 @@ footer {
   width:100%;
 }
 
-.btn-flotante {
-  font-size: 16px; /* Cambiar el tamaño de la tipografia */
-  text-transform: uppercase; /* Texto en mayusculas */
-  font-weight: bold; /* Fuente en negrita o bold */
-  color: #ffffff; /* Color del texto */
-  border-radius: 5px; /* Borde del boton */
-  letter-spacing: 2px; /* Espacio entre letras */
-  background-color: #00b0ff; /* Color de fondo */
-  padding: 12px 20px; /* Relleno del boton */
-  position: fixed;
-  bottom: 10px;
-  transition: all 300ms ease 0ms;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  z-index: 99;
-  width:90%;
+.titleCardAdvert {
+  font-size: x-large !important;
+  font-weight: 500 !important;
 }
+
+/* ::: CSS para los text input ::: */
+/* label focus color */
+.input-field input:focus + label {
+  color: #00b0ff !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #00b0ff !important;
+  box-shadow: 0 1px 0 0 #00b0ff !important
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+color: #00b0ff;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #00b0ff !important;
+ }
+/* label underline focus color */
+ .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #00b0ff !important;
+  box-shadow: 0 1px 0 0 #00b0ff !important;
+ }
+
+/*///////////////////////// Estilos login.html /////////////////////////*/
+ #login{
+  background-image: url(/images/img_bg1.jpg);
+}
+.container-login{
+  margin: 30px 0;
+  padding: 10px;
+  width: 350px;
+  background-color: rgba(255,255,255,.75);
+  border-radius: 8px;
+  color: #333;
+}
+.container-login label{
+  color: #333;
+}
+.container-login span{
+  font-size: 60px;
+}
+.container-login .input-field{
+  margin-top: 1px;
+}
+.container-login div .btn{
+  margin-bottom: 10px;
+  width: 90%;  
+}
+.font-cover .container .row img {
+  margin: 30px 0;
+}
+#welcome {
+  color: white;
+  text-align: justify;
+  margin-top: 10px;
+}
+/*///////////////////////// Estilos modals /////////////////////////*/
+.container .btn-flat{
+  margin-top: 10px;
+  text-transform: none;
+}
+#modal_register h6, #modal_register .modal-close{
+  font-weight: 600;
+}
+
+/*///////////////////////// Estilos maps.html /////////////////////////*/
+div ul li .row img {
+  margin-top: 6px;
+}
+div ul li .row h7 {
+  padding: 4px 4px;
+}
+
+/*///////////////////////// Estilos maps.html /////////////////////////*/
+#btnCloseSesion {
+  width: 100% !important;
+}
+#btnDeleteAccount {
+  width: 100% !important;
+  text-align: center;
+  margin: 0 0;
+  color: crimson;
+}
+/*///////////////////////// Estilos servicesPets.html /////////////////////////*/
+#contentRows {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contentRows .card {
+  height: 95%;
+}
+
+ 

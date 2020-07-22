@@ -22,7 +22,7 @@
               <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Ajustes</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="home.html">Inicio</a></li>
                 <li><a href="maps.html">Mapas</a></li>
                 <li><a href="adverts.html">Anuncios</a></li>
                 <li><a href="settings.html">Ajustes</a></li>
@@ -31,83 +31,219 @@
                 <li><a href="help.html">Ayuda</a></li>
                 <li><a href="donate.html">Donar</a></li>
                 <li><a href="share.html">Compartir</a></li>
-                <li><a href="#">Salir</a></li>
+                <li><a href="#modal_logout" class="modal-trigger">Salir</a></li>
+                <li><a href="#" class="dropdown-trigger" data-target="dropdown_More"><i class="material-icons">more_vert</i></a></li>
               </ul>
             </div>
         </nav>
     </div>
-      <!-- Componentes del SideNav -->
-      <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="/images/nav_1.jpg" alt="">
-                </div>
-                <a href="#">
-                    <img src="/images/img_profile.png" alt="" class="circle">
-                </a>
-                <a href="#">
-                    <span class="name black-text"><b>Johan Martínez</b></span>
-                </a>
-                <a href="#">
-                    <span class="email black-text">jomarquin@gmail.com</span>
-                </a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown_More' class='dropdown-content'>
+    <li><a href="#!">Ayuda</a></li>
+    <li><a href="#!">Preguntas frecuentes</a></li>
+  </ul>
+
+    <!-- Componentes del SideNav -->
+    <ul class="sidenav" id="mobile-demo">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="/images/nav_1.jpg" alt="">
             </div>
-        </li>
-        <li>
-            <a href="index.html"><i class="material-icons">home</i>Inicio</a>
-        </li>
-        <li>
-            <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
-        </li>
-        <li>
-            <a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a>
-        </li>
-        <li>
-            <a href="settings.html"><i class="material-icons">settings</i>Ajustes</a>
-        </li>
-        <li>
-            <a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a>
-        </li>
-        <li>
-            <a href="information.html"><i class="material-icons">info</i>Información</a>
-        </li>
-        <li>
-            <a href="help.html"><i class="material-icons">help</i>Ayuda</a>
-        </li>
-        <li>
-            <a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="share.html"><i class="material-icons">share</i>Compartir</a>
-        </li>
-        <li>
-            <a href="#"><i class="material-icons">power_settings_new</i>Salir</a>
-        </li>
-      </ul>
+            <a href="#">
+                <img src="/images/img_profile.png" alt="" class="circle">
+            </a>
+            <a href="#">
+                <span class="name black-text"><b>Johan Martínez</b></span>
+            </a>
+            <a href="#">
+                <span class="email black-text">jomarquin@gmail.com</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <a href="home.html"><i class="material-icons">home</i>Inicio</a>
+    </li>
+    <li>
+        <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
+    </li>
+    <li>
+        <a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a>
+    </li>
+    <li>
+        <a href="settings.html"><i class="material-icons">settings</i>Ajustes</a>
+    </li>
+    <li>
+        <a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a>
+    </li>
+    <li>
+        <a href="information.html"><i class="material-icons">info</i>Información</a>
+    </li>
+    <li>
+        <a href="help.html"><i class="material-icons">help</i>Ayuda</a>
+    </li>
+    <li>
+        <a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+        <a href="share.html"><i class="material-icons">share</i>Compartir</a>
+    </li>
+    <li>
+        <a href="#modal_logout" class="modal-trigger"><i class="material-icons">power_settings_new</i>Salir</a>
+    </li>
+    </ul>
+
+    <div class="container" style="width: 90%;">
+        <div class="row">
+
+            <div class="col s12 m6">
+                <div class="section"> 
+                    <h5 class="light-blue-text text-accent-3" style="font-size: medium;">UBICACIÓN</h5>
+                    <div class=" waves-effect" style="width: 100%;">                            
+                        <p style="font-size: large;"><i class="material-icons left">location_on</i>País</p>
+                        <p class="grey-text">Elige el País donde vives</p>
+                    </div>
+                    <div class=" waves-effect" style="width: 100%;">                            
+                        <p style="font-size: large;"><i class="material-icons left">gps_fixed</i>Estado o Ciudad</p>
+                        <p class="grey-text">Elige una Ciudad o un Estado</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="section">                
+                    <h5 class="light-blue-text text-accent-3" style="font-size: medium;">IDIOMA</h5>
+                    <div class=" waves-effect" style="width: 100%;">                            
+                        <p style="font-size: large;"><i class="material-icons left">language</i>Idioma de la aplicación</p>
+                        <p class="grey-text">Elige el idioma de tu preferencia</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="section">                
+                    <h5 class="light-blue-text text-accent-3" style="font-size: medium;">ANUNCIOS</h5>
+                    <div class=" waves-effect" style="width: 100%;">                            
+                        <p style="font-size: large;"><i class="material-icons left">campaign</i>Preferencias de anuncios</p>
+                        <p class="grey-text">Activa o desactiva los anuncios del menú principal</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="section">                
+                    <h5 class="light-blue-text text-accent-3" style="font-size: medium;">NOTIFICACIONES</h5>
+                    <div class=" waves-effect" style="width: 100%;">                            
+                        <p style="font-size: large;"><i class="material-icons left">notifications_active</i>Notificaciones Push</p>
+                        <p class="grey-text">Pausar todas las notificaciones</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="section">                
+                    <h5 class="light-blue-text text-accent-3" style="font-size: medium;">CUENTA</h5>
+                    <div onclick="location.href='./account.html'" class=" waves-effect" style="width: 100%;">                            
+                        <p style="font-size: large;"><i class="material-icons left">account_circle</i>Configuración de la cuenta</p>
+                        <p class="grey-text">Actualiza tus datos o elimina tu cuenta</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="section">                
+                    <h5 class="light-blue-text text-accent-3" style="font-size: medium;">ACTUALIZACIONES</h5>
+                    <div class=" waves-effect" style="width: 100%;">                            
+                        <p style="font-size: large;"><i class="material-icons left">system_update</i>Actuaizar la aplicación</p>
+                        <p class="grey-text">Actualizar automáticamente si está en una red wifi</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer hide-on-small-only light-blue accent-3">
+    <div class="container">
+        <div class="row">
+        <div class="col l6 s12">
+            <h5 class="white-text">FinderPet</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Redes sociales</h5>
+            <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+        © 2020 Todos los derechos reservados FinderPet
+        <a class="grey-text text-lighten-4 right" href="#!">www.finderpet.com.co</a>
+        </div>
+    </div>
+    </footer>
 
 
-
-
+    <!-- Modal Logout -->
+    <div id="modal_logout" class="modal">
+        <div class="modal-content center">
+            <img src="/images/img_exclamacion.png" alt="" class="responsive-img">
+            <h5>¿Deseas salir de la aplicación?</h5>   
+            <p>Si tienes publicaciones en progreso se perderán</p> 
+            <div class="row">
+                <div class="col s6 m4 offset-m2">
+                    <a href="#"class="modal-close waves-effect waves-light btn grey">Cancelar</a>
+                </div>
+                <div class="col s6 m4">
+                    <a href="index.html"class="waves-effect waves-light btn red">Aceptar</a>
+                </div>
+            </div>  
+        </div>
+    </div>
  
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-        </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems);
+    <!-- FinderPet JS -->
+    <script src="js/main.js"></script>
 
-                var elems = document.querySelectorAll('.slider');
-                var instances = M.Slider.init(elems, {
-                    interval: 3000,
-                    height: 230
-                });
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                interval: 3000,
+                height: 230
             });
-        </script>
+            
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+                        
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems);
+
+        });
+    </script>
        
 
 </body>

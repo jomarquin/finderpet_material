@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi cuenta</title>
+    <title>Agregar perdida</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,7 +19,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper light-blue accent-3">
-              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Mi cuenta</a>
+              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Agregar Perdida</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="home.html">Inicio</a></li>
@@ -88,58 +88,102 @@
       </ul>
 
 
-    <div class="container center">
-        <h5 class="center grey-text text-darken-2">Información de la cuenta</h5>
-        <div class="row">
-            <div class="col s12">
-                <img src="/images/img_profile.png" alt="" class="circle" style="margin-top: 12px;">                
-            </div>
-            <div class="col s12">
-                <span style="font-size: large;">Johan Martínez</span>  
-                <div class="divider"></div>             
-            </div>
-        </div>
+      <!-- Container del formulario -->
+      <div class="container">
+          <div class="row">
+              <div class="col s12">
+                  <h6 class="center">Nueva mascota perdida</h6>
+              </div>
 
-    </div>  
+              <!-- Opciones del radio button -->
+              <form action="#">
+                  <div class="row center" style="margin-bottom: 1px;">
+                        <div class="col s4">
+                            <p>
+                                <label>
+                                  <input class="with-gap" name="group1" type="radio"/>
+                                  <span>Perro</span>
+                                </label>
+                              </p>
+                        </div>
+                        <div class="col s4">
+                            <p>
+                                <label>
+                                  <input class="with-gap" name="group1" type="radio"/>
+                                  <span>Gato</span>
+                                </label>
+                              </p>
+                        </div>
+                        <div class="col s4">
+                            <p>
+                                <label>
+                                  <input class="with-gap" name="group1" type="radio"/>
+                                  <span>Otro</span>
+                                </label>
+                              </p>
+                        </div>
+                  </div>
+              </form>
+              <div class="divider"></div>
 
-    <div class="container">
-        <div class="row valign-wrapper">
-            <form class="col s12">
-                <div class="input-field col s12">
-                    <input disabled value="jomarquin@gmail.com" id="id_email" type="email" class="validate">
-                    <label class="active" for="id_email">Correo electrónico</label>
+              <!-- Campos para llenar formulario -->
+              <div class="row" style="margin-bottom: 1px;">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12 m6" style="margin-bottom: 1px;">
+                      <i onclick="M.toast({html: 'I am a toast'})" class="material-icons prefix">gps_fixed</i>
+                      <input  id="id_location" type="text" class="validate">
+                      <label for="id_location">Dirección / Ubicación</label>
+                    </div>
+                    <div class="input-field col s12 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">pets</i>
+                        <input id="id_name" type="text" class="validate">
+                        <label for="id_name">Nombre de la mascota</label>
+                      </div>
+                    <div class="input-field col s12 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="id_email" type="email" class="validate">
+                        <label for="id_email">Correo de contacto</label>
+                    </div>
+                    <div class="input-field col s12 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="id_phone" type="number" class="validate">
+                        <label for="id_phone">Teléfono</label>
+                    </div>
+                    <div class="input-field col s12 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="id_description" class="materialize-textarea"></textarea>
+                        <label for="id_description">Descripción / Observaciones</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="center" style="margin-bottom: 12px;">
+                <span >Puedes agregar hasta 3 imágenes de la mascota</span>
+              </div>
+              
+                <div class="row" style="margin-bottom: 1px;">
+                    <a href="#" class="waves-effect waves-teal col s4 center">
+                        <img src="/images/pet_photo_blanco.png" alt="" class="responsive-img">
+                    </a>
+                    <a href="#" class="waves-effect waves-teal col s4 center">
+                        <img src="/images/pet_photo_blanco.png" alt="" class="responsive-img">
+                    </a>
+                    <a href="#" class="waves-effect waves-teal col s4 center">
+                        <img src="/images/pet_photo_blanco.png" alt="" class="responsive-img">
+                    </a>
                 </div>
-            </form>
-            <div class="waves-effect">
-                <i class="col s2 material-icons prefix">mode_edit</i>
-            </div>
-            
-        </div>
-        <div class="row valign-wrapper">
-            <form class="col s12">
-                <div class="input-field col s12">
-                    <input disabled value="3008460707" id="id_phone" type="tel" class="validate">
-                    <label class="active" for="id_phone">Teléfono</label>
-                </div>
-            </form>
-            <div class="waves-effect">
-                <i class="col s2 material-icons prefix">mode_edit</i>
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col s12 m6 offset-m3">
-                <div class="section">
-                    <a id="btnCloseSesion" href="#modal_logout" class="waves-effect waves-light btn  light-blue accent-3 modal-trigger">Cerrar sesión &nbsp; <i class="material-icons left">exit_to_app</i></a>
-                </div>                
-            </div>
-            <div class="col s12 m6 offset-m3">
-                <div class="section">
-                    <a id="btnDeleteAccount" href="#" class="waves-effect waves-light btn-flat">Eliminar cuenta</a>
-                </div>  
-            </div>
-        </div>
-    </div>
+
+                <div class="divider" style="margin-bottom: 10px; margin-top: 10px;"></div>
+
+              <!-- Boton para guardar registro -->
+              <div class="center">
+                <a onclick="M.toast({html: 'Registro guardado'})" class="waves-effect waves-light btn light-blue accent-3"><i class="material-icons left">save</i>Guardar</a>
+              </div> 
+          </div>          
+
+      </div> <!-- Fin container -->
 
 
     <!-- Modal Logout -->
@@ -158,7 +202,6 @@
             </div>  
         </div>
     </div>
-
  
 
     <!-- Compiled and minified JavaScript -->

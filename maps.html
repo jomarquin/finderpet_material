@@ -11,6 +11,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClg-Cva-APOrm7AoEZ7sjx1s0nfLN_O5U&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      (function(exports) {
+        "use strict";
+
+        function initMap() {
+          exports.map = new google.maps.Map(document.getElementById("map"), {
+            center: {
+              lat: 6.2443382,
+              lng: -75.573553
+            },
+            zoom: 12
+          });
+        }
+
+        exports.initMap = initMap;
+      })((this.window = this.window || {}));
+    </script>
+
 
 </head>
 <body>
@@ -22,7 +60,7 @@
               <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Mapas</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="home.html">Inicio</a></li>
                 <li><a href="maps.html">Mapas</a></li>
                 <li><a href="adverts.html">Anuncios</a></li>
                 <li><a href="settings.html">Ajustes</a></li>
@@ -31,83 +69,171 @@
                 <li><a href="help.html">Ayuda</a></li>
                 <li><a href="donate.html">Donar</a></li>
                 <li><a href="share.html">Compartir</a></li>
-                <li><a href="#">Salir</a></li>
+                <li><a href="#modal_logout" class="modal-trigger">Salir</a></li>
               </ul>
             </div>
         </nav>
     </div>
-      <!-- Componentes del SideNav -->
-      <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="/images/nav_1.jpg" alt="">
-                </div>
-                <a href="#">
-                    <img src="/images/img_profile.png" alt="" class="circle">
-                </a>
-                <a href="#">
-                    <span class="name black-text"><b>Johan Martínez</b></span>
-                </a>
-                <a href="#">
-                    <span class="email black-text">jomarquin@gmail.com</span>
-                </a>
+  <!-- Componentes del SideNav -->
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="/images/nav_1.jpg" alt="">
             </div>
-        </li>
-        <li>
-            <a href="index.html"><i class="material-icons">home</i>Inicio</a>
-        </li>
-        <li>
-            <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
-        </li>
-        <li>
-            <a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a>
-        </li>
-        <li>
-            <a href="settings.html"><i class="material-icons">settings</i>Ajustes</a>
-        </li>
-        <li>
-            <a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a>
-        </li>
-        <li>
-            <a href="information.html"><i class="material-icons">info</i>Información</a>
-        </li>
-        <li>
-            <a href="help.html"><i class="material-icons">help</i>Ayuda</a>
-        </li>
-        <li>
-            <a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="share.html"><i class="material-icons">share</i>Compartir</a>
-        </li>
-        <li>
-            <a href="#"><i class="material-icons">power_settings_new</i>Salir</a>
-        </li>
-      </ul>
+            <a href="#">
+                <img src="/images/img_profile.png" alt="" class="circle">
+            </a>
+            <a href="#">
+                <span class="name black-text"><b>Johan Martínez</b></span>
+            </a>
+            <a href="#">
+                <span class="email black-text">jomarquin@gmail.com</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <a href="home.html"><i class="material-icons">home</i>Inicio</a>
+    </li>
+    <li>
+        <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
+    </li>
+    <li>
+        <a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a>
+    </li>
+    <li>
+        <a href="settings.html"><i class="material-icons">settings</i>Ajustes</a>
+    </li>
+    <li>
+        <a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a>
+    </li>
+    <li>
+        <a href="information.html"><i class="material-icons">info</i>Información</a>
+    </li>
+    <li>
+        <a href="help.html"><i class="material-icons">help</i>Ayuda</a>
+    </li>
+    <li>
+        <a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+        <a href="share.html"><i class="material-icons">share</i>Compartir</a>
+    </li>
+    <li>
+      <a href="#modal_logout" class="modal-trigger"><i class="material-icons">power_settings_new</i>Salir</a>
+    </li>
+  </ul>
 
 
+  <!-- Floating action button -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large light-blue accent-3">
+      <i class="large material-icons">add</i>
+    </a>
+    <ul>
+      <li>
+        <div class="row">
+          <div class="col s6" style="margin-left: -100px;">
+            <h7 class="grey darken-3 white-text">Adopciones</h7>            
+          </div>
+          <div class="col s4">
+            <a class="btn-floating green">
+              <img src="/images/ic_adopted.png" alt="" class="responsive-img" style="width: 25px;">
+            </a>
+          </div>
+        </div>      
+      </li>
+      <li>
+        <div class="row">
+          <div class="col s6" style="margin-left: -100px;">
+            <h7 class="grey darken-3 white-text">Encontrados</h7>            
+          </div>
+          <div class="col s4">
+            <a class="btn-floating orange">
+              <img src="/images/ic_dog.png" alt="" class="responsive-img" style="width: 25px;">
+            </a>
+          </div>
+        </div>      
+      </li>
+      <li>
+        <div class="row">
+          <div class="col s6" style="margin-left: -100px;">
+            <h7 class="grey darken-3 white-text">Perdidos</h7>            
+          </div>
+          <div class="col s4">
+            <a class="btn-floating purple">
+              <img src="/images/ic_cat.png" alt="" class="responsive-img" style="width: 25px;">
+            </a>
+          </div>
+        </div>      
+      </li>
+      <li>
+        <div class="row">
+          <div class="col s6" style="margin-left: -100px;">
+            <h7 class="grey darken-3 white-text">Todos</h7>            
+          </div>
+          <div class="col s4">
+            <a class="btn-floating cyan">
+              <i class="material-icons black-text">pets</i>
+            </a>
+          </div>
+        </div>      
+      </li>
+    </ul>
+  </div>
 
+  <!-- Contenedor del mapa -->
+  <div id="map"></div>
 
- 
+  <!-- Modal Logout -->
+  <div id="modal_logout" class="modal">
+    <div class="modal-content center">
+        <img src="/images/img_exclamacion.png" alt="" class="responsive-img">
+        <h5>¿Deseas salir de la aplicación?</h5>   
+        <p>Si tienes publicaciones en progreso se perderán</p> 
+        <div class="row">
+            <div class="col s6 m4 offset-m2">
+                <a href="#"class="modal-close waves-effect waves-light btn grey">Cancelar</a>
+            </div>
+            <div class="col s6 m4">
+                <a href="index.html"class="waves-effect waves-light btn red">Aceptar</a>
+            </div>
+        </div>  
+    </div>
+  </div> 
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-        </script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  </script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems);
+    <!-- FinderPet JS -->
+    <script src="js/main.js"></script>
 
-                var elems = document.querySelectorAll('.slider');
-                var instances = M.Slider.init(elems, {
-                    interval: 3000,
-                    height: 230
-                });
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                interval: 3000,
+                height: 230
             });
-        </script>
+            
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+                        
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+              hoverEnabled: false
+            });
+
+        });
+    </script>
        
 
 </body>

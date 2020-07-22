@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar encontrada</title>
+    <title>Agregar adopción</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,7 +19,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper light-blue accent-3">
-              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Agregar Encontrada</a>
+              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Agregar Adopción</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="home.html">Inicio</a></li>
@@ -92,7 +92,7 @@
       <div class="container">
           <div class="row">
               <div class="col s12">
-                  <h6 class="center">Nueva mascota encontrada</h6>
+                  <h6 class="center">Nueva mascota en adopción</h6>
               </div>
 
               <!-- Opciones del radio button -->
@@ -135,6 +135,30 @@
                       <input  id="id_location" type="text" class="validate">
                       <label for="id_location">Dirección / Ubicación</label>
                     </div>
+                    <div class="input-field col s7 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">pets</i>
+                        <input id="id_name" type="text" class="validate">
+                        <label for="id_name">Nombre mascota</label>
+                    </div>
+                    <div class="input-field col s5 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">insert_invitation</i>
+                        <input id="id_age" type="text" class="validate">
+                        <label for="id_age">Edad</label>
+                    </div>
+                    <div class="input-field col s7 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">sort_by_alpha</i>
+                        <input id="id_breed" type="text" class="validate">
+                        <label for="id_breed">Raza</label>
+                    </div>
+                    <div class="input-field col s5 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">biotech</i>
+                        <select>
+                            <option value="" disabled selected>Ester..</option>
+                            <option value="1">Sí</option>
+                            <option value="2">No</option>
+                          </select>
+                        <label>Esterilizado</label>
+                    </div>
                     <div class="input-field col s12 m6" style="margin-bottom: 1px;">
                         <i class="material-icons prefix">mail</i>
                         <input id="id_email" type="email" class="validate">
@@ -146,6 +170,11 @@
                         <label for="id_phone">Teléfono</label>
                     </div>
                     <div class="input-field col s12 m6" style="margin-bottom: 1px;">
+                        <i class="material-icons prefix">local_pharmacy</i>
+                        <textarea id="id_vaccines" class="materialize-textarea"></textarea>
+                        <label for="id_vaccines">Vacunas</label>
+                    </div>
+                    <div class="input-field col s12 m6" style="margin-bottom: 1px;">
                         <i class="material-icons prefix">mode_edit</i>
                         <textarea id="id_description" class="materialize-textarea"></textarea>
                         <label for="id_description">Descripción / Observaciones</label>
@@ -154,18 +183,18 @@
                 </form>
               </div>
 
-              <div class="center">
+              <div class="center" style="margin-bottom: 12px;">
                 <span >Puedes agregar hasta 3 imágenes de la mascota</span>
               </div>
               
-                <div class="row" >
-                    <a href="#" class="waves-effect col s4 m2 offset-m3 center">
+                <div class="row" style="margin-bottom: 1px;">
+                    <a href="#" class="waves-effect waves-teal col s4 center">
                         <img src="/images/pet_photo_blanco.png" alt="" class="responsive-img">
                     </a>
-                    <a href="#" class="waves-effect col s4 m2 center">
+                    <a href="#" class="waves-effect waves-teal col s4 center">
                         <img src="/images/pet_photo_blanco.png" alt="" class="responsive-img">
                     </a>
-                    <a href="#" class="waves-effect col s4 m2 center">
+                    <a href="#" class="waves-effect waves-teal col s4 center">
                         <img src="/images/pet_photo_blanco.png" alt="" class="responsive-img">
                     </a>
                 </div>
@@ -202,7 +231,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
     </script>
-    
+
     <!-- FinderPet JS -->
     <script src="js/main.js"></script>
 

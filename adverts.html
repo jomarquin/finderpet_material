@@ -22,7 +22,7 @@
               <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Anuncios</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="home.html">Inicio</a></li>
                 <li><a href="maps.html">Mapas</a></li>
                 <li><a href="adverts.html">Anuncios</a></li>
                 <li><a href="settings.html">Ajustes</a></li>
@@ -31,7 +31,7 @@
                 <li><a href="help.html">Ayuda</a></li>
                 <li><a href="donate.html">Donar</a></li>
                 <li><a href="share.html">Compartir</a></li>
-                <li><a href="#">Salir</a></li>
+                <li><a href="#modal_logout" class="modal-trigger">Salir</a></li>
               </ul>
             </div>
         </nav>
@@ -55,7 +55,7 @@
             </div>
         </li>
         <li>
-            <a href="index.html"><i class="material-icons">home</i>Inicio</a>
+            <a href="home.html"><i class="material-icons">home</i>Inicio</a>
         </li>
         <li>
             <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
@@ -83,31 +83,104 @@
             <a href="share.html"><i class="material-icons">share</i>Compartir</a>
         </li>
         <li>
-            <a href="#"><i class="material-icons">power_settings_new</i>Salir</a>
+            <a href="#modal_logout" class="modal-trigger"><i class="material-icons">power_settings_new</i>Salir</a>
         </li>
       </ul>
 
+    <div class="container">
+
+        <h5 class="center grey-text">Selecciona una categoría</h5>
+
+        <div class="row">
+            <div class="col s6 m3">
+                <div class="card" onclick="location.href='./servicesPets.html'">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="images/img_services.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title grey-text text-darken-2 center">Servicios</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="card" onclick="location.href='./servicesPets.html'">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="images/img_products.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title grey-text text-darken-2 center">Productos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="card" onclick="location.href='./servicesPets.html'">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="images/img_delivery.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title grey-text text-darken-2 center">Domicilios</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="card" onclick="location.href='./servicesPets.html'">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="images/img_events.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title grey-text text-darken-2 center">Eventos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
 
 
+    <!-- Modal Logout -->
+    <div id="modal_logout" class="modal">
+        <div class="modal-content center">
+            <img src="/images/img_exclamacion.png" alt="" class="responsive-img">
+            <h5>¿Deseas salir de la aplicación?</h5>   
+            <p>Si tienes publicaciones en progreso se perderán</p> 
+            <div class="row">
+                <div class="col s6 m4 offset-m2">
+                    <a href="#"class="modal-close waves-effect waves-light btn grey">Cancelar</a>
+                </div>
+                <div class="col s6 m4">
+                    <a href="index.html"class="waves-effect waves-light btn red">Aceptar</a>
+                </div>
+            </div>  
+        </div>
+    </div>
 
  
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-        </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems);
+    <!-- FinderPet JS -->
+    <script src="js/main.js"></script>
 
-                var elems = document.querySelectorAll('.slider');
-                var instances = M.Slider.init(elems, {
-                    interval: 3000,
-                    height: 230
-                });
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                interval: 3000,
+                height: 230
             });
-        </script>
+            
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+                        
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+
+        });
+    </script>
        
 
 </body>
