@@ -1,3 +1,12 @@
+head, body, footer {
+  padding-left: 300px;
+}
+@media only screen and (max-width : 992px) {
+  head, body, footer {
+    padding-left: 0;
+  }
+}
+
 footer {
   background-color: #03a9f4;
   padding: 10px 10px 0 10px;
@@ -132,6 +141,9 @@ color: #00b0ff;
   text-align: justify;
   margin-top: 10px;
 }
+/*///////////////////////// Estilos home.html /////////////////////////*/
+
+
 /*///////////////////////// Estilos modals /////////////////////////*/
 .container .btn-flat{
   margin-top: 10px;

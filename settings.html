@@ -22,80 +22,44 @@
         <nav>
             <div class="nav-wrapper light-blue accent-3">
               <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Ajustes</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="home.html">Inicio</a></li>
-                <li><a href="maps.html">Mapas</a></li>
-                <li><a href="adverts.html">Anuncios</a></li>
-                <li><a href="settings.html">Ajustes</a></li>
-                <li><a href="account.html">Mi cuenta</a></li>
-                <li><a href="information.html">Información</a></li>
-                <li><a href="help.html">Ayuda</a></li>
-                <li><a href="donate.html">Donar</a></li>
-                <li><a href="share.html">Compartir</a></li>
-                <li><a href="#modal_logout" class="modal-trigger">Salir</a></li>
-                <li><a href="#" class="dropdown-trigger" data-target="dropdown_More"><i class="material-icons">more_vert</i></a></li>
-              </ul>
+              <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
         </nav>
-    </div>
-
-  <!-- Dropdown Structure -->
-  <ul id='dropdown_More' class='dropdown-content'>
-    <li><a href="#!">Ayuda</a></li>
-    <li><a href="#!">Preguntas frecuentes</a></li>
-  </ul>
-
+    </div><!-- End Navbar -->
     <!-- Componentes del SideNav -->
-    <ul class="sidenav" id="mobile-demo">
-    <li>
-        <div class="user-view">
-            <div class="background">
-                <img src="/images/nav_1.jpg" alt="">
+    <ul class="sidenav sidenav-fixed" id="mobile-sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="/images/bg_profile.png" alt="">
+                </div>
+                <a href="#"><img src="/images/img_profile.png" alt="" class="circle"></a>
+                <a href="#"><span class="name white-text"><b>Johan Martínez</b></span></a>
+                <a href="#"><span class="email white-text">jomarquin@gmail.com</span></a>
             </div>
-            <a href="#">
-                <img src="/images/img_profile.png" alt="" class="circle">
-            </a>
-            <a href="#">
-                <span class="name black-text"><b>Johan Martínez</b></span>
-            </a>
-            <a href="#">
-                <span class="email black-text">jomarquin@gmail.com</span>
-            </a>
-        </div>
-    </li>
-    <li>
-        <a href="home.html"><i class="material-icons">home</i>Inicio</a>
-    </li>
-    <li>
-        <a href="maps.html"><i class="material-icons">location_on</i>Mapas</a>
-    </li>
-    <li>
-        <a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a>
-    </li>
-    <li>
-        <a href="settings.html"><i class="material-icons">settings</i>Ajustes</a>
-    </li>
-    <li>
-        <a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a>
-    </li>
-    <li>
-        <a href="information.html"><i class="material-icons">info</i>Información</a>
-    </li>
-    <li>
-        <a href="help.html"><i class="material-icons">help</i>Ayuda</a>
-    </li>
-    <li>
-        <a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a>
-    </li>
-    <li><div class="divider"></div></li>
-    <li>
-        <a href="share.html"><i class="material-icons">share</i>Compartir</a>
-    </li>
-    <li>
-        <a href="#modal_logout" class="modal-trigger"><i class="material-icons">power_settings_new</i>Salir</a>
-    </li>
+        </li>
+        <li><a href="home.html"><i class="material-icons">home</i>Inicio</a></li>
+        <li><a href="maps.html"><i class="material-icons">location_on</i>Mapas</a></li>
+        <li><a href="adverts.html"><i class="material-icons">campaign</i>Anuncios</a></li>
+        <li><a href="settings.html"><i class="material-icons">settings</i>Ajustes</a></li>
+        <li><a href="account.html"><i class="material-icons">account_circle</i>Mi cuenta</a></li>
+        <li><a href="information.html"><i class="material-icons">info</i>Información</a></li>
+        <li><a href="help.html"><i class="material-icons">help</i>Ayuda</a></li>
+        <li><a href="donate.html"><i class="material-icons">card_giftcard</i>Donar</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="share.html"><i class="material-icons">share</i>Compartir</a></li>
+        <li><a href="#modal_logout" class="modal-trigger"><i class="material-icons">power_settings_new</i>Salir</a></li>
+        <li><a href="#"></a></li><!-- Estos dos li se agregan para poder visualizar bien la opcion salir -->
+        <li><a href="#"></a></li>
+    </ul><!-- End SideNav -->
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown_More' class='dropdown-content'>
+        <li><a href="#!">Ayuda</a></li>
+        <li><a href="#!">Preguntas frecuentes</a></li>
     </ul>
+
+
 
     <div class="container" style="width: 90%;">
         <div class="row">
