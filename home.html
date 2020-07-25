@@ -10,10 +10,12 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Libreria iconos Awsome -->
+    <script src="https://kit.fontawesome.com/7633e9ddf0.js" crossorigin="anonymous"></script>
 
 
 </head>
-<body>
+<body id="home">
 
     <!-- Componentes del NavBar -->
     <div class="navbar-fixed">
@@ -52,7 +54,7 @@
     </ul><!-- End SideNav -->
       
     <!-- Vista para móviles -->
-    <div class="hide-on-med-and-up">
+    <div id="viewMobile" class="hide-on-med-and-up">
         
         <div class="row cardFinder">
             <div class="col s12 m4 l3 offset-l2">
@@ -91,53 +93,204 @@
             <div class="col s12 m10 offset-m1">
                 <div id="sliderMovil" class="slider">
                     <ul class="slides">
-                        <li>
-                            <img src="/images/banner1.png">
-                        </li>
-                        <li>
-                            <img src="/images/banner2.png">
-                        </li>
-                        <li>
-                            <img src="/images/banner3.png">
-                        </li>
-                        <li>
-                            <img src="/images/banner4.png">
-                        </li>
+                        <li><img src="/images/banner1.png"></li>
+                        <li><img src="/images/banner2.png"></li>
+                        <li><img src="/images/banner3.png"></li>
+                        <li><img src="/images/banner4.png"></li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <!-- Este bloque se hizo con flexbox-->
+        <div class="boxContactUs">
+            <div class="appStore">
+                <div class="col m12 center"><p>Descarga nuestra app para Android</p></div>
+                <div class="col m2 offset-m5 center"><a href="https://play.google.com/store/apps/details?id=com.wakypetapp.cliente" target="_blank"><img id="googleStore" src="/images/app_logo_google_play.png" alt="" class="responsive-img"></a></div>
+            </div>
+            <div class="advertUs center">
+                <p> ¿Quieres anunciar con nosotros? </p>
+                <a href="https://api.whatsapp.com/send?phone=+573008460707&text=%C2%BFC%C3%B3mo%20puedo%20anunciar%20con%20ustedes?" target="_blank" class="waves-effect waves-light btn">Contáctanos &nbsp; <i class="fab fa-whatsapp left"></i></a>
+            </div> 
+        </div>
+
     </div><!-- Termina vista para móviles -->
     
+
     <!-- Vista para web -->
-    <div class=" hide-on-small-only">
+    <div id="viewWeb" class="hide-on-small-only">
         <!-- Slider de imágenes para web -->
-        <div class="row">
-            <div class="col s12">
-                <div id="sliderWeb" class="slider">
-                    <ul class="slides">
-                        <li>
-                            <img src="/images/banner1.png">
-                        </li>
-                        <li>
-                            <img src="/images/banner2.png">
-                        </li>
-                        <li>
-                            <img src="/images/banner3.png">
-                        </li>
-                        <li>
-                            <img src="/images/banner4.png">
-                        </li>
-                    </ul>
+        <div id="sliderWeb" class="slider">
+            <ul class="slides">
+                <li><img src="/images/bs1.png"></li>
+                <li><img src="/images/bs2.png"></li>
+                <li><img src="/images/bs3.png"></li>
+                <li><img src="/images/bs4.png"></li>
+                <li><img src="/images/bs5.png"></li>
+                <li><img src="/images/bs6.png"></li>
+                <li><img src="/images/bs7.png"></li>
+                <li><img src="/images/bs8.png"></li>
+                <li><img src="/images/bs9.png"></li>
+            </ul>
+        </div>
+
+        <div id="selectPetService" class="row">
+            <div class="col s6 m4">
+                <div class="card z-depth-2">
+                    <div class="card-image waves-effect waves-block waves-light" onclick="location.href='./founds.html'">
+                      <img src="images/pet_found.jpg">
+                    </div>
+                    <div class="card-content">
+                      <a class="card-title waves-effect waves-block" onclick="location.href='./founds.html'">Mascotas Encontradas</a>
+                      <div class="divider"></div>
+                      <p>En esta sección podrás encontrar un listado de mascotas que han sido encontradas en la calle o de mascotas que parecen perdidas. También podrás realizar tus propias publicaciones de mascotas que has encontrado o visto abandonadas</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="founds.html">Ver listado</a>
+                        <a href="addFound.html">Agregar post</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div class="card z-depth-2">
+                    <div class="card-image waves-effect waves-block waves-light" onclick="location.href='./losts.html'">
+                      <img src="images/pet_lost.jpg">
+                    </div>
+                    <div class="card-content">
+                      <a class="card-title waves-effect waves-block" onclick="location.href='./losts.html'">Mascotas Perdidas</a>
+                      <div class="divider"></div>
+                      <p>En esta sección podrás encontrar un listado de mascotas perdidas, desaparecidas o robadas. También podrás realizar tus propias publicaciones de mascotas que se extraviaron por algún motivo.</p>
+                      <br><!-- agregue un salto de linea para que los link queden al mismo nivel -->
+                    </div>
+                    <div class="card-action">
+                        <a href="losts.html">Ver listado</a>
+                        <a href="addLost.html">Agregar post</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4">
+                <div class="card z-depth-2">
+                    <div class="card-image waves-effect waves-block waves-light" onclick="location.href='./adopted.html'">
+                      <img src="images/pet_adopted.jpg">
+                    </div>
+                    <div class="card-content">
+                      <a class="card-title waves-effect waves-block" onclick="location.href='./adopted.html'">Mascotas en Adopción</a>
+                      <div class="divider"></div>
+                      <p>En esta sección podrás encontrar un listado de mascotas que están en busca de un nuevo hogar, podrás adoptar la mascota de tu preferencia entre las opciones que tenemos. También podrás realizar tus propias publicaciones de mascotas en adopción.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="adopted.html">Ver listado</a>
+                        <a href="addAdopted.html">Agregar post</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Carousel services & products -->
+        <div id="ourPartners" class="font-cover">
+            <div class="center">
+                <h5>Encuentra servicios y productos para tus mascotas con nuestros aliados</h5>
+                <div class="carousel">
+                    <a class="carousel-item" href="adverts.html"><img src="/images/banner1.png"></a>
+                    <a class="carousel-item" href="adverts.html"><img src="/images/banner2.png"></a>
+                    <a class="carousel-item" href="adverts.html"><img src="/images/banner3.png"></a>
+                    <a class="carousel-item" href="adverts.html"><img src="/images/banner4.png"></a>
+                    <a class="carousel-item" href="adverts.html"><img src="/images/banner5.png"></a>
+                    <a class="carousel-item" href="adverts.html"><img src="/images/banner6.png"></a>
+                    <a class="carousel-item" href="adverts.html"><img src="/images/banner7.png"></a>
+                    <a class="carousel-item" href="adverts.html"><img src="/images/banner8.png"></a>
+                </div>
+            </div>
+        </div><!-- End Carousel -->
+
+        <div id="success_stories" class="container z-depth-3">
+            <div class="section center">
+                <h4>Casos de éxito con FinderPet</h4>
+                <div class="divider"></div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <div class="col m4"><img src="/images/success_storie_1.jpg" alt="" class="responsive-img"></div>
+                    <div class="col m8">
+                        <h5>¡Balto volvió a su hogar!</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit incidunt quia ipsam laudantium iusto, consequatur, esse similique vel a consectetur id enim neque vero tempora reprehenderit, placeat aliquam cumque!</p>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <div class="col m4"><img src="/images/success_storie_1.jpg" alt="" class="responsive-img"></div>
+                    <div class="col m8">
+                        <h5>¡Balto volvió a su hogar!</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit incidunt quia ipsam laudantium iusto, consequatur, esse similique vel a consectetur id enim neque vero tempora reprehenderit, placeat aliquam cumque!</p>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <div class="col m4"><img src="/images/success_storie_1.jpg" alt="" class="responsive-img"></div>
+                    <div class="col m8">
+                        <h5>¡Balto volvió a su hogar!</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit incidunt quia ipsam laudantium iusto, consequatur, esse similique vel a consectetur id enim neque vero tempora reprehenderit, placeat aliquam cumque!</p>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <div class="col m4"><img src="/images/success_storie_1.jpg" alt="" class="responsive-img"></div>
+                    <div class="col m8">
+                        <h5>¡Balto volvió a su hogar!</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit incidunt quia ipsam laudantium iusto, consequatur, esse similique vel a consectetur id enim neque vero tempora reprehenderit, placeat aliquam cumque!</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Este bloque se hizo con flexbox-->
+        <div class="boxContactUs">
+            <div class="appStore">
+                <div class="col m12 center"><p>Descarga nuestra app para Android</p></div>
+                <div class="col m2 offset-m5 center"><a href="https://play.google.com/store/apps/details?id=com.wakypetapp.cliente" target="_blank"><img id="googleStore" src="/images/app_logo_google_play.png" alt="" class="responsive-img"></a></div>
+            </div>
+            <div class="advertUs center">
+                <p> ¿Quieres anunciar con nosotros? </p>
+                <a href="https://api.whatsapp.com/send?phone=+573008460707&text=%C2%BFC%C3%B3mo%20puedo%20anunciar%20con%20ustedes?" target="_blank" class="waves-effect waves-light btn">Contáctanos &nbsp; <i class="fab fa-whatsapp left"></i></a>
+            </div>
+        </div>
+
+    </div> <!-- Termina vista para web -->
     
 
-
-
-    
+    <!-- Footer -->
+    <footer class="page-footer hide-on-small-only">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="center"><p id="downAppTitle" class="grey-text text-lighten-4">Descarga nuestra app para Android</p></div>
+                    <div class="center">
+                        <a href="https://play.google.com/store/apps/details?id=com.wakypetapp.cliente" target="_blank"><img id="googleStore" src="/images/app_logo_google_play.png" alt="" class="responsive-img"></a>
+                    </div>
+                </div> 
+                <div class="col s12 m4">
+                    <h5 class="white-text">FinderPet</h5>
+                    <ul id="infoFinder">
+                        <li><i class="material-icons">location_on</i><a class="grey-text text-lighten-3" href="#!"> &nbsp; Calle 52 sur 56-13, Medellín, Colombia.</a></li>
+                        <li><i class="material-icons">local_phone</i><a class="grey-text text-lighten-3" href="#!"> &nbsp; +57 300 846 07 07</a></li>
+                        <li><i class="material-icons">email</i><a class="grey-text text-lighten-3" href="#!"> &nbsp; soporte@finderpet.com.co</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h6 class="white-text">Visítanos en nuestras redes sociales</h6>
+                    <ul id="infoSocial">
+                        <li><i class="fab fa-instagram-square"></i><a class="grey-text text-lighten-3" href="#!"> &nbsp; Instagram</a></li>
+                        <li><i class="fab fa-facebook-square"></i><a class="grey-text text-lighten-3" href="#!"> &nbsp; Facebook</a></li>
+                        <li><i class="fab fa-youtube-square"></i><a class="grey-text text-lighten-3" href="#!"> &nbsp; Youtube</a></li>
+                        <li><i class="fab fa-whatsapp-square"></i><a class="grey-text text-lighten-3" href="#!"> &nbsp; WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>         
+        <div class="footer-copyright">
+            <div class="container center">
+                © FinderPet. Todos los derechos reservados 2020.
+            </div>
+        </div>
+    </footer><!-- End Footer -->
 
 
     <!-- Modal Logout -->
@@ -173,7 +326,8 @@
             //Inicializamos todos los slider con esta configuración
             var elems = document.querySelectorAll('.slider');
             var instances = M.Slider.init(elems, {
-                interval: 4000
+                interval: 4000,
+                height: 300
             });
 
             //Inicializamos el slider para movil con esta configuración
@@ -188,6 +342,12 @@
                         
             var elems = document.querySelectorAll('select');
             var instances = M.FormSelect.init(elems);
+
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems);
+
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
 
         });
     </script>

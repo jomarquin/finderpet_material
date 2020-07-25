@@ -10,6 +10,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Libreria iconos Awsome -->
+    <script src="https://kit.fontawesome.com/7633e9ddf0.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -90,7 +92,7 @@
               </form>
               <div class="divider"></div>
 
-              <!-- Campos para llenar formulario -->
+              <!-- form fields -->
               <div class="row" style="margin-bottom: 1px;">
                 <form class="col s12">
                   <div class="row">
@@ -106,7 +108,7 @@
                     </div>
                     <div class="input-field col s12 m6" style="margin-bottom: 1px;">
                         <i class="material-icons prefix">phone</i>
-                        <input id="id_phone" type="number" class="validate">
+                        <input id="id_phone" type="tel" class="validate">
                         <label for="id_phone">Teléfono</label>
                     </div>
                     <div class="input-field col s12 m6" style="margin-bottom: 1px;">
@@ -116,7 +118,7 @@
                     </div>
                   </div>
                 </form>
-              </div>
+              </div><!-- End form fields -->
 
               <div class="center">
                 <span >Puedes agregar hasta 3 imágenes de la mascota</span>
@@ -136,13 +138,13 @@
 
                 <div class="divider" style="margin-bottom: 10px; margin-top: 10px;"></div>
 
-              <!-- Boton para guardar registro -->
+              <!-- button to save the record -->
               <div class="center">
                 <a onclick="M.toast({html: 'Registro guardado'})" class="waves-effect waves-light btn light-blue accent-3"><i class="material-icons left">save</i>Guardar</a>
               </div> 
           </div>          
 
-      </div> <!-- Fin container -->
+      </div> <!-- End container form -->
 
 
     <!-- Modal Logout -->
@@ -162,6 +164,42 @@
         </div>
     </div>
  
+
+    <!-- Footer -->
+    <footer class="page-footer hide-on-small-only">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="center"><p id="downAppTitle" class="grey-text text-lighten-4">Descarga nuestra app para Android</p></div>
+                    <div class="center">
+                        <a href="https://play.google.com/store/apps/details?id=com.wakypetapp.cliente" target="_blank"><img id="googleStore" src="/images/app_logo_google_play.png" alt="" class="responsive-img"></a>
+                    </div>
+                </div> 
+                <div class="col s12 m4">
+                    <h5 class="white-text">FinderPet</h5>
+                    <ul id="infoFinder">
+                        <li><i class="material-icons">location_on</i><a class="grey-text text-lighten-3" href="#!"> &nbsp; Calle 52 sur 56-13, Medellín, Colombia.</a></li>
+                        <li><i class="material-icons">local_phone</i><a class="grey-text text-lighten-3" href="#!"> &nbsp; +57 300 846 07 07</a></li>
+                        <li><i class="material-icons">email</i><a class="grey-text text-lighten-3" href="#!"> &nbsp; soporte@finderpet.com.co</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h6 class="white-text">Visítanos en nuestras redes sociales</h6>
+                    <ul id="infoSocial">
+                        <li><i class="fab fa-instagram-square"></i><a class="grey-text text-lighten-3" href="#!"> &nbsp; Instagram</a></li>
+                        <li><i class="fab fa-facebook-square"></i><a class="grey-text text-lighten-3" href="#!"> &nbsp; Facebook</a></li>
+                        <li><i class="fab fa-youtube-square"></i><a class="grey-text text-lighten-3" href="#!"> &nbsp; Youtube</a></li>
+                        <li><i class="fab fa-whatsapp-square"></i><a class="grey-text text-lighten-3" href="#!"> &nbsp; WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>         
+        <div class="footer-copyright">
+            <div class="container center">
+                © FinderPet. Todos los derechos reservados 2020.
+            </div>
+        </div>
+    </footer><!-- End Footer -->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">

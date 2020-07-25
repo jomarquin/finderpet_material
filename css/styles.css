@@ -6,13 +6,41 @@ head, body, footer {
     padding-left: 0;
   }
 }
-
+/*///////////////////////// styles footer /////////////////////////*/
 footer {
-  background-color: #03a9f4;
+  background-color: #424242 !important;
   padding: 10px 10px 0 10px;
   margin-top: 10px;
-  margin-bottom: 0px; }
-
+  margin-bottom: 0px; 
+}
+footer div.footer-copyright .container {
+  font-weight: 600;
+}
+#googleStore {
+  width: 180px;
+  height: 50px;
+}
+footer .container {  
+  width: 100%;
+}
+footer .container #infoFinder li i, footer .container #infoFinder li a {  
+  display:inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+footer .container #infoSocial li i {  
+  font-size: 30px;
+}
+footer .container #infoSocial li i, footer .container #infoSocial li a { 
+  display:inline-block;
+  vertical-align: middle;
+  margin-top: 4px;
+}
+footer .footer-copyright {  
+  background-color: #333333 !important;
+  margin: 0 -10px;
+}
+/*///////////////////////// styles ?????? /////////////////////////*/
 .centerBlock {
   display: table;
   margin: auto; }
@@ -52,7 +80,8 @@ footer {
 /* Cradas para finderpet - revisar las anteriores para ver si se estan usando */
 
 .primaryColor {
-  color: #00b0ff;
+  /* color: #00b0ff; */
+  color: #0d47a1 ;
 }
 
 .cardFinder {
@@ -108,7 +137,7 @@ color: #00b0ff;
   box-shadow: 0 1px 0 0 #00b0ff !important;
  }
 
-/*///////////////////////// Estilos login.html /////////////////////////*/
+/*///////////////////////// styles index.html /////////////////////////*/
  #login{
   background-image: url(/images/img_bg1.jpg);
 }
@@ -141,10 +170,121 @@ color: #00b0ff;
   text-align: justify;
   margin-top: 10px;
 }
-/*///////////////////////// Estilos home.html /////////////////////////*/
+/*///////////////////////// styles home.html /////////////////////////*/
+#home{
+  background-image: url(/images/img_bg1.jpg);
+}
+@media only screen and (max-width : 992px) { /* in small view we remove background */
+  #home {
+    background-image: none;
+  }
+}
+#sliderWeb {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#viewWeb.container {
+  width: 95%;
+}
+#viewWeb .row .card div.card-content a.card-title {
+  font-weight: 600;
+  color: black;
+}
+#viewWeb .row .card div.card-content p {
+  text-align: justify;
+  margin-top: 10px;
+}
+#viewWeb .row .card div.card-action a {
+  color: blue;
+}
+#viewWeb .row .card {
+  border-radius: 8px;
+}
+#viewWeb .row .card div.card-action {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#viewWeb .row .card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#viewMobile .boxContactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#viewMobile .boxContactUs .appStore, #viewMobile .boxContactUs .advertUs {
+  flex: 1;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  margin: 15px;
+  padding: 10px;
+}
+#viewMobile .boxContactUs .advertUs p, #viewMobile .boxContactUs .appStore p {
+  font-size: 20px;
+  font-weight: 600;
+}
+#viewMobile .boxContactUs .advertUs a {
+  background-color:#00bb2d;
+}
+#viewWeb .boxContactUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#viewWeb .boxContactUs .appStore, #viewWeb .boxContactUs .advertUs {
+  flex: 1;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 6px;
+  margin: 15px;
+  padding: 10px;
+}
+#viewWeb .boxContactUs .advertUs p, #viewWeb .boxContactUs .appStore p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+#viewWeb .boxContactUs .advertUs a {
+  background-color:#00bb2d;
+}
+#selectPetService {
+  display: flex !important;
+  padding: 0 20px !important;
+}
+#ourPartners {
+  background-color:rgba(0,0,0,0.4); /* rgbA transparencia */
+  width: 100%;
+  height: 320px;
+}
+#ourPartners h5 {
+  color: white;
+  padding-top: 12px;
+}
+#ourPartners .carousel {
+  margin-top: -60px;
+}
+#ourPartners img {
+  width: 300px;
+  height: 200px;
+}
+#downAppTitle {
+  font-weight: 700;
+}
+#success_stories {
+  background-color: white !important;
+  width: 95%;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 6px;
+}
 
 
-/*///////////////////////// Estilos modals /////////////////////////*/
+
+/*///////////////////////// styles modals /////////////////////////*/
 .container .btn-flat{
   margin-top: 10px;
   text-transform: none;
@@ -152,8 +292,11 @@ color: #00b0ff;
 #modal_register h6, #modal_register .modal-close{
   font-weight: 600;
 }
+#modal_register {
+  background-color: rgb(254, 254, 254, 0.9);
+}
 
-/*///////////////////////// Estilos maps.html /////////////////////////*/
+/*///////////////////////// styles maps.html /////////////////////////*/
 div ul li .row img {
   margin-top: 6px;
 }
@@ -161,7 +304,7 @@ div ul li .row h7 {
   padding: 4px 4px;
 }
 
-/*///////////////////////// Estilos maps.html /////////////////////////*/
+/*///////////////////////// styles account.html /////////////////////////*/
 #btnCloseSesion {
   width: 100% !important;
 }
@@ -171,13 +314,18 @@ div ul li .row h7 {
   margin: 0 0;
   color: crimson;
 }
-/*///////////////////////// Estilos servicesPets.html /////////////////////////*/
+/*///////////////////////// styles servicesPets.html /////////////////////////*/
 #contentRows {
   display: flex;
   flex-wrap: wrap;
 }
 #contentRows .card {
   height: 95%;
+}
+
+/*///////////////////////// styles frequentQuestion.html /////////////////////////*/
+#collapQuestion .collapsible-body {
+  background-color: #bebebe;
 }
 
  

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información</title>
+    <title>Preguntas frecuentes</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,7 +21,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper light-blue accent-3">
-              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Información</a>
+              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Preguntas frecuentes</a>
               <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
         </nav>
@@ -53,21 +53,24 @@
         <li><a href="#"></a></li>
     </ul><!-- End SideNav -->
 
+    <div id="collapQuestion" class="container center">
+        <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">¿Cómo hacer una publicación nueva de una mascota encontrada, perdida o en adopción?</div>
+              <div class="collapsible-body"><span>Debes dirigirte a la pantalla de inicio, luego debes escoger entre las 3 opciones que tenemos para publicar, puede ser encontrados, Perdidos o en Adopción, te aparecerá la lista de las mascotas con tu elección y en la parte inferior encontraras on botón que te permite agregar una nueva publicación, Te aparece un formulario que debes diligenciar y luego das clic en Guardar.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">¿Cómo puedo cambiar los ajustes de País o ciudad?</div>
+              <div class="collapsible-body"><span>Debes dirigirte a la sección de Ajustes del menú desplegable, luego en la sección de UBICACIÓN seleccionas "País" o "Estado o Ciudad" dependiendo de lo que quieres cambiar, te aparece una lista donde puedes seleccionar el País o Ciudad de tu preferencia.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">¿Cómo puedo eliminar una publicación que hice?</div>
+              <div class="collapsible-body"><span>Si quieres eliminar una publicación porque tiene algún error en los datos ingresados, puedes enviar un correo a nuestra área de soporte (finderpetapp@gmail.com) para que tu publicación sea corregida, debes informar en que campo quedó el error y la información correcta que se ingresará. En el caso de que ya no quieras que aparezca tu publicación en nuestra App, envía el correo con el asunto Eliminar publicación definitivamente.</span></div>
+            </li>
+        </ul>
+    </div>
 
-      <div class="row">
-          <div class="col s12 m12 l12 center cardFinder">
-            <a class="waves-effect waves-teal btn-flat btx">Política de Datos</a>
-          </div>
-          <div class="col s12 m12 l12 center">
-            <a class="waves-effect waves-teal btn-flat btx">Condiciones de uso</a>
-          </div>
-          <div class="col s12 m12 l12 center">
-            <a class="waves-effect waves-teal btn-flat btx">Acerca de la aplicación</a>
-          </div>
-          <div class="col s12 m12 l12 center">
-            <a class="waves-effect waves-teal btn-flat btx">información de los desarrolladores</a>
-          </div>
-      </div>
+    
 
 
     <!-- Modal Logout -->
@@ -85,9 +88,9 @@
                 </div>
             </div>  
         </div>
-    </div>
-    
-    
+    </div> 
+
+
     <!-- Footer -->
     <footer class="page-footer hide-on-small-only">
         <div class="container">
@@ -125,7 +128,6 @@
     </footer><!-- End Footer -->
 
 
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
     </script>
@@ -149,6 +151,9 @@
                         
             var elems = document.querySelectorAll('select');
             var instances = M.FormSelect.init(elems);
+
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
 
         });
     </script>
