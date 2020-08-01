@@ -1,12 +1,38 @@
-head, body, footer {
-  padding-left: 300px;
+/*///////////////////////// styles navbar and sidenav /////////////////////////*/
+head, body, footer{
+  padding-right: 160px;
 }
 @media only screen and (max-width : 992px) {
-  head, body, footer {
-    padding-left: 0;
+  head, body, footer{
+    padding-right: 0;
   }
+} 
+body nav a img {
+  width: 150px;
+  padding-top: 12px;
+}
+/* #nav_bar {
+  padding-right: 159px !important; 
+} */
+/*///////////////////////// styles adlatRight /////////////////////////*/
+#adlatRight{
+  background-color: #bebebe !important;
+  display: block;
+  position: fixed;
+  width: 160px;
+  height: 1200px;
+  top: 64px;
+  right: 0px;
+  border:1px solid #eee;
+  z-index: 99;
 }
 /*///////////////////////// styles footer /////////////////////////*/
+@media only screen and (max-width: 992px) {
+#adlatRight {
+      display:none;
+  }
+}
+
 footer {
   background-color: #424242 !important;
   padding: 10px 10px 0 10px;
@@ -173,6 +199,7 @@ color: #00b0ff;
 /*///////////////////////// styles home.html /////////////////////////*/
 #home{
   background-image: url(/images/img_bg1.jpg);
+  background-attachment: fixed;
 }
 @media only screen and (max-width : 992px) { /* in small view we remove background */
   #home {
@@ -281,6 +308,18 @@ color: #00b0ff;
   padding: 12px;
   border-radius: 6px;
 }
+#success_stories #storie-logo {
+  width: 160px;
+}
+#success_stories .section a {
+  font-size: xx-large;
+  color: black;
+  font-weight: 600;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 
 
@@ -302,6 +341,14 @@ div ul li .row img {
 }
 div ul li .row h7 {
   padding: 4px 4px;
+}
+#fab-map {
+  margin-right: 180px;
+}
+@media only screen and (max-width : 992px) { /* in small view we remove background */
+  #fab-map {
+    margin-right: 0;
+  }
 }
 
 /*///////////////////////// styles account.html /////////////////////////*/

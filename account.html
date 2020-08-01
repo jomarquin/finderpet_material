@@ -21,13 +21,26 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper light-blue accent-3">
-              <a href="#!" class="brand-logo left marginTitleApp" style="font-size: 18px;">Mi cuenta</a>
+            <a href="#!" class="brand-logo left marginTitleApp hide-on-small-only" style="font-size: 18px;"><img src="/images/logo_letra_blanco.png" alt=""></a>
+            <a href="#!" class="brand-logo left marginTitleApp hide-on-med-and-up" style="font-size: 18px;">Mi cuenta</a>
               <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">                
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="maps.html">Mapas</a></li>
+                <li><a href="adverts.html">Anuncios</a></li>
+                <li><a href="settings.html">Ajustes</a></li>
+                <li><a href="account.html">Mi cuenta</a></li>
+                <li><a href="information.html">Información</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+                <li><a href="donate.html">Donar</a></li>
+                <li><a href="share.html">Compartir</a></li>
+                <li><a href="#modal_logout" class="modal-trigger">Salir</a></li>
+              </ul>
             </div>
         </nav>
     </div><!-- End Navbar -->
     <!-- Componentes del SideNav -->
-    <ul class="sidenav sidenav-fixed" id="mobile-sidenav">
+    <ul class="sidenav" id="mobile-sidenav">
         <li>
             <div class="user-view">
                 <div class="background">
@@ -108,6 +121,18 @@
     </div>
 
 
+    <!-- lateral adverts -->
+    <div id="adlatRight" class="hide-on-small-only">
+        <!-- Slider de publicidad -->
+        <div id="sliderAds" class="slider">
+            <ul class="slides">
+                <li><img src="/images/ad-lateral.png"></li>
+                <li><img src="/images/ad-lateral2.png"></li>
+                <li><img src="/images/ad-lateral3.png"></li>
+            </ul>
+        </div>
+    </div> 
+
     <!-- Modal Logout -->
     <div id="modal_logout" class="modal">
         <div class="modal-content center">
@@ -124,7 +149,6 @@
             </div>  
         </div>
     </div>
-
 
     <!-- Footer -->
     <footer class="page-footer hide-on-small-only">
@@ -164,32 +188,9 @@
  
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-    </script>
-
-    <!-- FinderPet JS -->
-    <script src="js/main.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-
-            var elems = document.querySelectorAll('.slider');
-            var instances = M.Slider.init(elems, {
-                interval: 3000,
-                height: 230
-            });
-            
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems);
-                        
-            var elems = document.querySelectorAll('select');
-            var instances = M.FormSelect.init(elems);
-
-        });
-    </script>
-       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Scripts and functions FinderPet main.js -->
+    <script src="js/main.js"></script>      
 
 </body>
 </html>
